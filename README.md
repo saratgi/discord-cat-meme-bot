@@ -59,6 +59,18 @@ python bot.py
 | `$hello` | Sends a greeting message |
 | `$meme`  | Sends a random cat meme  |
 
+## Customization
+
+The bot currently fetches memes from the `catmemes`subreddit.
+
+To use a different subreddit, change the subreddit name in the API URL inside `get_meme()`:
+
+```python
+response = requests.get("https://meme-api.com/gimme/catmemes")
+```
+
+For example, replace `catmemes`with another subreddit name.
+
 ## Notes
 
 The real `.env` file is ignored with `.gitignore`so the bot token is not uploaded to GitHub.
