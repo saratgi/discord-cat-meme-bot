@@ -1,4 +1,4 @@
-# Discord Cat Meme Bot
+# Discord Cat Meme Bot 🐈‍⬛
 
 A simple Discord bot that sends a random cat meme when a user types a command.
 
@@ -26,7 +26,7 @@ A simple Discord bot that sends a random cat meme when a user types a command.
 - How to use environment variables to keep tokens private
 - How to use a `.env` file with `python-dotenv`
 - How to use `.gitignore` to avoid uploading sensitive files
-- How to document project dependencies with `requirements.txt´
+- How to document project dependencies with `requirements.txt`
 - How to fetch data from a public API using `requests`
 - How to read JSON response data and use specific values from it
 - How to make a bot respond to simple text commands 
@@ -44,7 +44,7 @@ Create a `.env` file in the project folder and add your Discord bot token:
 ```env
 DISCORD_TOKEN=your_discord_bot_token_here
 ```
-You can use .env.example as a template for this file.
+You can use `.env.example` as a template for this file.
 
 Run the bot:
 
@@ -61,7 +61,7 @@ python bot.py
 
 ## Customization
 
-The bot currently fetches memes from the `catmemes`subreddit.
+The bot currently fetches memes from the `catmemes` subreddit.
 
 To use a different subreddit, change the subreddit name in the API URL inside `get_meme()`:
 
@@ -69,10 +69,8 @@ To use a different subreddit, change the subreddit name in the API URL inside `g
 response = requests.get("https://meme-api.com/gimme/catmemes")
 ```
 
-For example, replace `catmemes`with another subreddit name.
+For example, replace `catmemes` with another subreddit name.
 
 ## Notes
 
-The real `.env` file is ignored with `.gitignore`so the bot token is not uploaded to GitHub.
-
-
+The real `.env` file is ignored by `.gitignore` to keep private information, such as the Discord bot token, from being uploaded to GitHub.
